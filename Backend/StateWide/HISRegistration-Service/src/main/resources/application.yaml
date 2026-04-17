@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: HISRegistration-Service
+
+  cloud:
+    compatibility-verifier:
+      enabled: false
+
+  datasource:
+    url: jdbc:postgresql://devhphmis.dcservices.in:6444/hmishp_maha
+    username: ehms_hp
+    password: eHm@#sHp
+    driver-class-name: org.postgresql.Driver
+
+  #jpa:
+    #database-platform: org.hibernate.dialect.OracleDialect
+    #show-sql: true
+    #hibernate:
+     # ddl-auto: none
+
+server:
+  port: 8084
+
+logging:
+  level:
+    org.hibernate.engine.jdbc.spi.SqlExceptionHelper: ERROR
+

@@ -1,0 +1,59 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "HisRegistrationServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cdac.statewide.hisregistration.service.HisRegistrationServiceApplication"
+        },
+        {
+            "type": "java",
+            "name": "HisCommonServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cdac.statewide.hiscommon.service.HisCommonServiceApplication"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-LoginServiceApplication<auth-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.statewide.login.LoginServiceApplication",
+            "projectName": "auth-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51319 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=auth-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GatewayServiceApplication<gateway-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cdac.statewide.gatewayservice.GatewayServiceApplication",
+            "projectName": "gateway-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57705 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=gateway-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-HisCommonServiceApplication<HISCommon-Service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cdac.statewide.hiscommon.service.HisCommonServiceApplication",
+            "projectName": "HISCommon-Service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51395 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=HISCommon-Service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-HisRegistrationServiceApplication<HISRegistration-Service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cdac.statewide.hisregistration.service.HisRegistrationServiceApplication",
+            "projectName": "HISRegistration-Service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

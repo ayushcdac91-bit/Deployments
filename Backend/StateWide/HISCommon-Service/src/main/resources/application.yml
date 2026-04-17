@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: HISCommon-Service
+
+  datasource:
+    url: jdbc:postgresql://devhphmis.dcservices.in:6444/hmishp_maha
+    username: ehms_hp
+    password: eHm@#sHp
+    driver-class-name: org.postgresql.Driver
+
+  #jpa:
+    #database-platform: org.hibernate.dialect.OracleDialect
+    #show-sql: true
+    #hibernate:
+     # ddl-auto: none
+
+server:
+  port: 8083
+
+logging:
+  level:
+    org.hibernate.engine.jdbc.spi.SqlExceptionHelper: ERROR
